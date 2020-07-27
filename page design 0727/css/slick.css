@@ -1,0 +1,124 @@
+/* Slider */
+.live-song .slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+    user-select:0;
+    -webkit-user-select: 0;
+       -moz-user-select: 0;
+        -ms-user-select: 0;
+            user-select: 0;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: 0;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.live-song .slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.live-song .slick-list:focus
+{
+    outline: none;
+}
+.live-song .slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.live-song .slick-slider .slick-track,
+.live-song .slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.live-song .slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.live-song .slick-track:before,
+.live-song .slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.live-song .slick-track:after
+{
+    clear: both;
+}
+.live-song .slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.live-song .slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+    margin:0 20px;
+}
+[dir='rtl'] .live-song .slick-slide
+{
+    float: right;
+}
+.live-song .slick-slide img
+{
+    display: block;
+}
+.live-song .slick-slide.slick-loading img
+{
+    display: none;
+}
+.live-song .slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.live-song .slick-initialized .slick-slide
+{
+    display: block;
+}
+.live-song .slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.live-song .slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.live-song .slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* .slick-center {
+    padding-bottom:30px;
+} */
